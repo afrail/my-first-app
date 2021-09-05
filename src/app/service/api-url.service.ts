@@ -6,7 +6,7 @@ import { environment } from '../../environments/environment';
 })
 export class ApiUrlService {
   public apiUrl = environment.baseUrl;
-  public registration = this.apiUrl + 'user/registration';
+  public registration = this.apiUrl + 'api/auth/';
   public userlist = this.apiUrl + 'user/view';
   constructor() { }
 }

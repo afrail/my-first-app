@@ -11,11 +11,11 @@ import { map } from 'rxjs/operators';
 })
 export class RegistrationComponent implements OnInit {
 
-  name: any;
+  username: any;
   email: any;
-  phone: any;
   password: any;
-
+  name: any;
+  phone: any;
   constructor(private router: Router, private registration: RegistrationService, private http: HttpClient) { }
 
   ngOnInit() {
@@ -25,7 +25,7 @@ export class RegistrationComponent implements OnInit {
   signUp(): any {
     this.registration.signUp(this.name, this.email, this.phone, this.password).subscribe((res: any) => {
       console.log(res);
-      
+
     });
   }
 
