@@ -2,7 +2,6 @@ import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { ApiUrlService } from './api-url.service';
 import {map} from 'rxjs/operators';
-import {observableToBeFn} from "rxjs/internal/testing/TestScheduler";
 
 @Injectable({
   providedIn: 'root'

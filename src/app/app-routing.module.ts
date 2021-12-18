@@ -5,10 +5,10 @@ import { LoginComponent } from './login/login.component';
 import { ListofuserComponent } from './listofuser/listofuser.component';
 
 const routes: Routes = [
- 
+
   {path: '', component: RegistrationComponent},
   {path: 'login', component: LoginComponent},
-  {path: 'userlist',component: ListofuserComponent}
+  {path: 'userlist', component: ListofuserComponent}
 ];
 
 @NgModule({
